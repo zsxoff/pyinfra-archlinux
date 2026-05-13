@@ -49,10 +49,10 @@ systemd.service(
     enabled=True,
 )
 
-# Timezone
+# Time
 
 server.timezone(
-    name="Timezone - Set the timezone to Europe/Moscow",
+    name="Time - Set the timezone to Europe/Moscow",
     timezone="Europe/Moscow",
     _sudo=True,
 )
