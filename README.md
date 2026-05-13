@@ -2,12 +2,12 @@
 
 ## What's inside
 
-| File                                             | Description                                    |
-| :----------------------------------------------- | :--------------------------------------------- |
-| [./src/deploy.py](./src/deploy.py)               | Setup Arch Linux system from zero installation |
-| [./src/mime.py](./src/mime.py)                   | Setup XDG MIME Applications                    |
-| [./src/wayland/base.py](./src/wayland/base.py)   | Setup Wayland environment                      |
-| [./src/wayland/labwc.py](./src/wayland/labwc.py) | Setup Labwc compositor                         |
+| File                                                             | Description                                    |
+| :--------------------------------------------------------------- | :--------------------------------------------- |
+| [./src/deploy.py](./src/deploy.py)                               | Setup Arch Linux system from zero installation |
+| [./src/mime.py](./src/mime.py)                                   | Setup XDG MIME Applications                    |
+| [./src/wayland/base.py](./src/wayland/base.py)                   | Setup Wayland environment                      |
+| [./src/wayland/desktop_labwc.py](./src/wayland/desktop_labwc.py) | Setup Labwc compositor                         |
 
 ## How to deploy this
 
