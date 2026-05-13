@@ -242,20 +242,6 @@ pacman.packages(
 )
 
 pacman.packages(
-    name="Tools - Install development packages",
-    packages=[
-        "cmake",
-        "gcc",
-        "gdb",
-        "make",
-        "meson",
-        "ninja",
-    ],
-    present=True,
-    _sudo=True,
-)
-
-pacman.packages(
     name="Tools - Install system tools",
     packages=[
         "bolt",
