@@ -1,4 +1,4 @@
-from pyinfra.operations import pacman
+from pyinfra.operations import pacman, server, systemd
 
 
 pacman.packages(
@@ -52,23 +52,25 @@ pacman.packages(
     _sudo=True,
 )
 
-# pacman.packages(
-#     name="Desktop - Install GDM",
-#     packages=["gdm"],
-#     present=True,
-#     _sudo=True,
-# )
+pacman.packages(
+    name="Desktop - Install GDM",
+    packages=[
+        "gdm",
+    ],
+    present=True,
+    _sudo=True,
+)
 
-# systemd.service(
-#     name="Desktop - Enable gdm.service",
-#     service="gdm.service",
-#     running=True,
-#     enabled=True,
-#     _sudo=True,
-# )
+systemd.service(
+    name="Desktop - Enable gdm.service",
+    service="gdm.service",
+    running=True,
+    enabled=True,
+    _sudo=True,
+)
 
-# server.shell(
-#     name="Desktop - Enable graphical.target",
-#     commands=["systemctl set-default graphical.target"],
-#     _sudo=True,
-# )
+server.shell(
+    name="Desktop - Enable graphical.target",
+    commands=["systemctl set-default graphical.target"],
+    _sudo=True,
+)

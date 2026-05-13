@@ -8,6 +8,7 @@
 | [./src/mime.py](./src/mime.py)                                   | Setup XDG MIME Applications                    |
 | [./src/wayland/base.py](./src/wayland/base.py)                   | Setup Wayland environment                      |
 | [./src/wayland/desktop_labwc.py](./src/wayland/desktop_labwc.py) | Setup Labwc compositor                         |
+| [./src/wayland/desktop_gnome.py](./src/wayland/desktop_gnome.py) | Setup GNOME desktop                            |
 
 ## How to deploy this
 
