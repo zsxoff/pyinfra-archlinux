@@ -49,15 +49,11 @@ systemd.service(
     enabled=True,
 )
 
-# Time
+# Timezone
 
-server.shell(
-    name="Time - Set timezone to Europe/Moscow",
-    commands=[
-        "rm -rf /etc/localtime",
-        "ln -s /usr/share/zoneinfo/Europe/Moscow /etc/localtime",
-        "hwclock --systohc",
-    ],
+server.timezone(
+    name="Timezone - Set the timezone to Europe/Moscow",
+    timezone="Europe/Moscow",
     _sudo=True,
 )
 
