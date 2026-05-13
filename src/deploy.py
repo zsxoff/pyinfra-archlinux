@@ -3,13 +3,15 @@ from pyinfra.operations import pacman, server, systemd
 
 # Locales
 
-server.shell(
-    name="Locale - Generate en_US and ru_RU locales",
-    commands=[
-        'echo "en_US.UTF-8 UTF-8" > /etc/locale.gen',
-        'echo "ru_RU.UTF-8 UTF-8" >> /etc/locale.gen',
-        "locale-gen",
-    ],
+server.locale(
+    name="Locales - Ensure en_US.UTF-8 locale is present",
+    locale="en_US.UTF-8",
+    _sudo=True,
+)
+
+server.locale(
+    name="Locales - Ensure ru_RU.UTF-8 locale is present",
+    locale="ru_RU.UTF-8",
     _sudo=True,
 )
 
