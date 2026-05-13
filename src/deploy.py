@@ -189,17 +189,9 @@ pacman.packages(
 # Fonts
 
 pacman.packages(
-    name="Fonts - Install fontconfig",
+    name="Fonts - Install fontconfig & fonts",
     packages=[
         "fontconfig",
-    ],
-    present=True,
-    _sudo=True,
-)
-
-pacman.packages(
-    name="Fonts - Install fonts",
-    packages=[
         "adobe-source-code-pro-fonts",
         "cantarell-fonts",
         "gnu-free-fonts",
