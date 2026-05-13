@@ -175,17 +175,6 @@ systemd.service(
     _sudo=True,
 )
 
-# Python
-
-pacman.packages(
-    name="Python - Install Python",
-    packages=[
-        "python",
-    ],
-    present=True,
-    _sudo=True,
-)
-
 # Fonts
 
 pacman.packages(
